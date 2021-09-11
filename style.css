@@ -4,23 +4,43 @@ body {
     --gradient-color: #303030;
     --primary-color: #ffffff;
     --hover-background: #fff3;
-  }
-  .container {
+    --placeholder-color: #fff7;
+}
+body ::-webkit-input-placeholder {
+  color: var(--placeholder-color);
+}
+.container {
     color: var(--primary-color);
-  }
-  table, th, td {
+}
+table, th, td {
     border: 0.1px solid #fffe;
     cursor: auto;
-  }
-  .red {
+}
+#result {
+    font-size: 30px;
+}
+td {
+    color: var(--primary-color);
+    width: 50px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    cursor: default;
+}
+input, button {
+    background-color: #0000;
+    border: none;
+    color: var(--primary-color);
+}
+.red {
     --accent-color: #be4152;
     --gradient-color: #b1373d;
-  }
-  .green {
+}
+.green {
     --accent-color: #21693e;
     --gradient-color: #275f39;
-  }
-  .blue {
+}
+.blue {
     --accent-color: #004e9a;
     --gradient-color: #428cd4;
-  }
+}

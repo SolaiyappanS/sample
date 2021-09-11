@@ -1,6 +1,6 @@
 var count = 0;
-
-function swapmode() {
+var element = document.body;
+function themeChange() {
     count++;
     switch (count) {
         case 1:
@@ -27,15 +27,16 @@ function convert(){
     var name = document.getElementById("name").value;
     var joker = document.getElementById("joker").value;
     var strArray = name.split(" ");
-    var result;
-    for(var i=0; i<strArray.Length; i++){
-        for(var j=0; j<strArray.Length; j++){
+    var result = "";
+    for(var i=0; i<strArray.length; i++){
+        for(var j=0; j<strArray.length; j++){
             if(i==j){
                 result += joker;
             }
             else{
                 result += strArray[j];
             }
+            result += " ";
         }
         result += "<br>";
     }
