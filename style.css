@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(to bottom right, var(--accent-color) 0%, var(--gradient-color) 100%);
+    --accent-color: #2d2d2d;
+    --gradient-color: #303030;
+    --primary-color: #ffffff;
+    --hover-background: #fff3;
+  }
+  .container {
+    color: var(--primary-color);
+  }
+  table, th, td {
+    border: 0.1px solid #fffe;
+    cursor: auto;
+  }
+  .red {
+    --accent-color: #be4152;
+    --gradient-color: #b1373d;
+  }
+  .green {
+    --accent-color: #21693e;
+    --gradient-color: #275f39;
+  }
+  .blue {
+    --accent-color: #004e9a;
+    --gradient-color: #428cd4;
+  }
